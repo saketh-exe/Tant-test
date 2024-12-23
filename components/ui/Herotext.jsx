@@ -41,9 +41,10 @@ export default function Herotext() {
         alignItems: "center",
         flexDirection: "column",
         flexWrap: "nowrap",
+        marginTop: "clamp(5rem, 10vw, 10rem)",
       }}
     >
-      <span className="font-medium mb-4 text-yellow-100" style={{ fontSize: "clamp(1.5rem, 3vw, 4rem)" }}>
+      <span className="font-medium mb-4 text-yellow-100 " style={{ fontSize: "clamp(1.5rem, 3vw, 4rem)" }}>
         Welcome to
       </span>
       <AnimatePresence mode="wait">
