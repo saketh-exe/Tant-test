@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className="font-semibold text-center text-white text-5xl sm:text-5xl md:text-5xl lg:text-5xl w-3/4 mx-auto my-12 bg-slate-50 bg-opacity-10 backdrop-filter backdrop-blur-xl rounded-lg p-6">
       About
-      <div className="font-normal text-justify text-lg mt-6">
+      <div className="font-light text-justify text-lg mt-6">
         Tantrotrotsav is the annual technical festival of the Amrita Vishwa
         Vidyapeetham, Chennai Campus. The festival celebrates the spirit of
         innovation, engineering, and technology with a diverse range of
