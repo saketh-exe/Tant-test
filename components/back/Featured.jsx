@@ -7,7 +7,7 @@ export default function Featured() {
       <div className="hidden sm:hidden md:hidden lg:flex justify-end mr-6 sm:mr-12 md:mr-24zz">
         <p className="font-light text-xs mt-3 underline">Browse more</p>
       </div>
-      <div className="flex flex-col sm:flex-row justify-evenly align-middle gap-6 m-6 sm:m-12 md:m-24zz">
+      <div className="flex flex-col sm:flex-row justify-evenly align-middle gap-6 m-6 sm:m-12 md:m-24zz items-center">
         <EventCard />
         <EventCard />
         <EventCard />
