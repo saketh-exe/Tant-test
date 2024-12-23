@@ -36,7 +36,7 @@ export default function Body({ onScroll }) {
       ref={scrollContainerRef} // Attach the ref to the scrollable container
       className="relative z-10 overflow-y-scroll h-screen w-full scrollbar-hide"
     >
-      <div className="flex justify-center items-center flex-col w-full min-h-screen backdrop: backdrop-blur-lg bg-opacity-50">
+      <div className="flex justify-center items-center flex-col w-full min-h-screen ">
         
         <Herotext />
         <Coundown />

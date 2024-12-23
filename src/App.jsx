@@ -6,10 +6,7 @@ function App() {
 
   return (
     <div>
-    <Background/> 
-
-   
-    
+    <Background/>
     </div>
     
   )

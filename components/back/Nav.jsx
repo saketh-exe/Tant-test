@@ -6,10 +6,7 @@ export default function Navbar({ isScrolled }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // Dummy user data for testing
-  const user = {
-    profileImage: '/default-profile.jpg', // Placeholder profile image
-    cart: [1, 2, 3], // Example cart items
-  };
+  const user = false
 
   const Logo = {logo}; // Placeholder logo
 
