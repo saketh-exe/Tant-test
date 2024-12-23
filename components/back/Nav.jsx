@@ -53,7 +53,7 @@ export default function Navbar({ isScrolled }) {
 
       {/* Navigation Links (Responsive) */}
       <div
-        className={`fixed top-0 left-0 h-full w-3/4 max-w-sm bg-white shadow-lg rounded-r-lg transform transition-transform duration-500 ease-in-out z-50 ${
+        className={`fixed top-0 left-0 h-full w-2/3 max-w-sm bg-white shadow-lg rounded-r-lg transform transition-transform duration-500 ease-in-out z-50 ${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
         } md:static md:block md:w-auto md:translate-x-0 md:rounded-none md:shadow-none`}
       >
