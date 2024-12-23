@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 export default function Herotext() {
   const text = [
-    ["T", "A", "N", "T", "R", "O", "T", "S", "A", "V"],
+    ["T", "a", "n", "t", "r", "o", "t", "s", "a", "v"],
     ["तं", "त्रो", "त्स", "व"],
     ["తం", "త్రో", "త్స", "వం"],
     ["த", "ந்", "தி", "ரோ", "த்", "ச", "வ்"],
