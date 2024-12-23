@@ -11,7 +11,6 @@ export default function Herotext() {
     ["탄", "트", "로", "츠", "바" ],
     ["タ", "ン", "ト", "ロ", "ツ", "バ" ],
     ["坦", "特", "罗", "茨", "瓦" ],
-   
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -35,21 +34,18 @@ export default function Herotext() {
       className="main"
       style={{
         userSelect: "none",
-        // zIndex: 2,
-        // position: "fixed",
         width: "100%",
-        
         textAlign: "center",
-        fontSize: "8rem",
-        fontWeight: "900",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        flexWrap: "nowrap",
         flexDirection: "column",
+        flexWrap: "nowrap",
       }}
     >
-      <span className="font-medium text-6xl mb-4 text-yellow-100">Welcome to </span>
+      <span className="font-medium mb-4 text-yellow-100" style={{ fontSize: "clamp(1.5rem, 3vw, 4rem)" }}>
+        Welcome to
+      </span>
       <AnimatePresence mode="wait">
         <motion.div
           key={currentIndex}
@@ -64,10 +60,15 @@ export default function Herotext() {
               key={`${currentIndex}-${index}`}
               variants={textVariants}
               transition={{ duration: 1, type: "spring" }}
-              style={{textShadow: "0 0 20px wheat",color: "white"}}
+              style={{
+                textShadow: "0 0 20px wheat",
+                color: "white",
+                fontSize: "clamp(3rem, 8vw, 8rem)", // Responsive font size
+                fontWeight: "900",
+              }}
               className="herotxt"
             >
-              {letter+(index === text[currentIndex].length - 1 ? " '25" : "")}
+              {letter + (index === text[currentIndex].length - 1 ? " '25" : "")}
             </motion.span>
           ))}
         </motion.div>
