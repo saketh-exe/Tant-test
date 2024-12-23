@@ -11,6 +11,11 @@ export const content = [
 export const darkMode = "class";
 export const theme = {
   extend: {
+    colors: {
+      accomm_bg: "#272727",
+      accom_card_bg: "#3d3d3d",
+      phone_bg: "#FFF2E4",
+    },
     animation: {
       first: "moveVertical 30s ease infinite",
       second: "moveInCircle 20s reverse infinite",

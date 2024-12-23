@@ -1,15 +1,12 @@
-import './App.css'
-import { Background } from '../components/back/Background'
+import "./App.css";
+import { Background } from "../components/back/Background";
 
 function App() {
-
-
   return (
     <div>
-    <Background/>
+      <Background />
     </div>
-    
-  )
+  );
 }
 
-export default App
+export default App;
