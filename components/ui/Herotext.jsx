@@ -41,7 +41,7 @@ export default function Herotext() {
         alignItems: "center",
         flexDirection: "column",
         flexWrap: "nowrap",
-        marginTop: "clamp(5rem, 10vw, 10rem)",
+        marginTop: "clamp(5rem, 10vw, 6rem)",
       }}
     >
       <span
