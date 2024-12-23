@@ -1,19 +1,18 @@
-
-import { useState } from 'react';
+import { useState } from "react";
 
 function EventCard() {
   const [isLoading, setIsLoading] = useState(false);
 
   // Dummy event data
   const event = {
-    thumbnail: '/default-thumbnail.jpg',
-    title: 'Sample Event Title',
-    description: 'This is a short description of the event.',
-    date: '2024-12-25',
-    time: '18:00',
+    thumbnail: "/default-thumbnail.jpg",
+    title: "Sample Event Title",
+    description: "This is a short description of the event.",
+    date: "2024-12-25",
+    time: "18:00",
     capacity: 50,
     registrationFee: 200,
-    _id: '12345',
+    _id: "12345",
   };
 
   return (
@@ -39,19 +38,19 @@ function EventCard() {
 
         <div className="mt-[10px] text-[14px] text-[#323232] flex flex-col items-center gap-[5px]">
           <p className="text-sm">
-            <strong className="text-[#000000]">Date:</strong>{' '}
+            <strong className="text-[#000000]">Date:</strong>{" "}
             <span className="text-black">
               {new Date(event.date).toLocaleDateString()}
             </span>
           </p>
           <p className="text-sm">
-            <strong className="text-[#000000]">Registration Fee:</strong>{' '}
+            <strong className="text-[#000000]">Registration Fee:</strong>{" "}
             <span className="text-black">
-              {event.registrationFee ? `₹${event.registrationFee}` : 'Free'}
+              {event.registrationFee ? `₹${event.registrationFee}` : "Free"}
             </span>
           </p>
           <p className="text-sm">
-            <strong className="text-[#000000]">Slots Remaining:</strong>{' '}
+            <strong className="text-[#000000]">Slots Remaining:</strong>{" "}
             <span className="text-black">{event.capacity} slots</span>
           </p>
         </div>
@@ -65,7 +64,6 @@ function EventCard() {
         >
           View Details
         </a>
-        
       </div>
     </div>
   );
