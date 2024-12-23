@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { FaShoppingCart, FaBars, FaTimes } from "react-icons/fa";
-import logo from "./uniLogo.svg"
+import logo from "./uniLogo.svg";
 
 export default function Navbar({ isScrolled }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // Dummy user data for testing
-  const user = false
+  const user = false;
 
-  const Logo = {logo}; // Placeholder logo
+  const Logo = { logo }; // Placeholder logo
 
   // Normal state style
   const sstyle = {
@@ -48,13 +48,13 @@ export default function Navbar({ isScrolled }) {
     >
       {/* Logo */}
       <div className="flex items-center gap-4">
-        <img src={logo} alt="Logo" className="lg:h-10 h-6" />
+        <img src={logo} alt="Logo" className="lg:h-10 h-6" width="75%" />
       </div>
 
       {/* Navigation Links (Responsive) */}
       <div
         className={`fixed top-0 left-0 h-full w-3/4 max-w-sm bg-white shadow-lg rounded-r-lg transform transition-transform duration-500 ease-in-out z-50 ${
-          isMenuOpen ? 'translate-x-0' : '-translate-x-full'
+          isMenuOpen ? "translate-x-0" : "-translate-x-full"
         } md:static md:block md:w-auto md:translate-x-0 md:rounded-none md:shadow-none`}
       >
         <div className="flex flex-col md:flex-row md:gap-8 p-6 md:p-0 h-full">
@@ -86,7 +86,7 @@ export default function Navbar({ isScrolled }) {
       <div className="flex items-center gap-4 md:gap-4 z-40">
         {user ? (
           <div className="flex items-center gap-4">
-            <a to={'/cart'} className="relative">
+            <a to={"/cart"} className="relative">
               <FaShoppingCart className="h-6 w-6 text-gray-700 cursor-pointer" />
               <span className="absolute -top-1 -right-2 bg-red-500 text-white text-xs rounded-full px-1">
                 {user.cart.length || 0}
