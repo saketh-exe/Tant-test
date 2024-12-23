@@ -6,11 +6,11 @@ export default function Herotext() {
     ["T", "A", "N", "T", "R", "O", "T", "S", "A", "V"],
     ["तं", "त्रो", "त्स", "व"],
     ["తం", "త్రో", "త్స", "వం"],
-    ["த", "ந்", "தி", "ரோ", "த்", "ச", "வ்" ],
-    ["ത", "ന്ത്രോ", "ത്സ", "വം" ],
-    ["탄", "트", "로", "츠", "바" ],
-    ["タ", "ン", "ト", "ロ", "ツ", "バ" ],
-    ["坦", "特", "罗", "茨", "瓦" ],
+    ["த", "ந்", "தி", "ரோ", "த்", "ச", "வ்"],
+    ["ത", "ന്ത്രോ", "ത്സ", "വം"],
+    ["탄", "트", "로", "츠", "바"],
+    ["タ", "ン", "ト", "ロ", "ツ", "バ"],
+    ["坦", "特", "罗", "茨", "瓦"],
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -44,7 +44,10 @@ export default function Herotext() {
         marginTop: "clamp(5rem, 10vw, 10rem)",
       }}
     >
-      <span className="font-medium mb-4 text-yellow-100 " style={{ fontSize: "clamp(1.5rem, 3vw, 4rem)" }}>
+      <span
+        className="font-medium mb-4 text-yellow-100 "
+        style={{ fontSize: "clamp(1.5rem, 3vw, 4rem)" }}
+      >
         Welcome to
       </span>
       <AnimatePresence mode="wait">
