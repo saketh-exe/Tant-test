@@ -16,7 +16,7 @@ export default function Navbar({ isScrolled }) {
     top: 0,
     left: "50%", // Center horizontally
     transform: "translateX(-50%)", // Adjust for centering
-    width: "50%", // Normal width
+    width: "70%", // Normal width
     padding: "10px 20px",
     backgroundColor: "white",
     color: "black",
