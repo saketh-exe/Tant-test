@@ -68,7 +68,11 @@ export default function Navbar({ isScrolled }) {
           ) : null}
           <NavLink to="/events" text="Events" setIsMenuOpen={setIsMenuOpen} />
           <NavLink to="/gallery" text="Gallery" setIsMenuOpen={setIsMenuOpen} />
-          <NavLink to="/support" text="Support" setIsMenuOpen={setIsMenuOpen} />
+          <NavLink
+            to="/accommodation"
+            text="Accommodation"
+            setIsMenuOpen={setIsMenuOpen}
+          />
           {!user && (
             <div className="flex flex-col gap-4 mt-6 md:hidden">
               <button className="text-xs py-2 px-4 bg-black text-white rounded-md">

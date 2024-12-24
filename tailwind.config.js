@@ -12,6 +12,7 @@ export const darkMode = "class";
 export const theme = {
   extend: {
     colors: {
+      booknow_bg: "#f09b98",
       accomm_bg: "#272727",
       accom_card_bg: "#3d3d3d",
       phone_bg: "#FFF2E4",
